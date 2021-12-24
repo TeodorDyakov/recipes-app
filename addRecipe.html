@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "addRecipeStyle.css">
+    </head>
+    
+    <body>
+        <div id = "main">
+            
+            <input type="text" class = "input1" id="name" placeholder="Name"><br><br>
+            <input type="text" class = "input1" id="image" placeholder="Image Link"><br><br>
+            
+            <label>Category</label>
+            <select id = "category">
+            </select>
+
+            <label>Region</label>
+            <select id = "region">
+                
+            </select>
+            <h3>Ingredients</h3>
+            <ul id = "ingredientsList">
+                <li>
+                    <input type="text" class = "input1 ingredientName" placeholder="Ingredient Name"><br><br>
+                    <input type="text" class = "input1 measure" placeholder="Measure"><br><br>
+                </li>
+            </ul>
+            <button id = "addIngredientButton" onclick="addIngredientInput();">Add Another Ingredient</button>
+            <button id = "addRecipeButton" onclick="addRecipe();">Add Recipe</button>
+            <script src = "addRecipe.js"></script>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,196 @@
+    :root {
+    --color1: #FFFFFF;
+    --color2: #EAEAEA;
+    --color3: #C4C4C4;
+    --color4: #000000;
+    --fontsize1: 16px;
+    --fontsize2: 32px;
+    --borderradius1: 16px;
+    --borderradius2: 8px;
+    --spacing1: 16px;
+    --spacing2: 8px;
+    --opacity: 0.5;
+    --fontweight1: 700;
+    --fontweight2: 400;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 50%;
+    font-size: var(--fontsize1);
+    font-weight: var(--fontweight2);
+    margin: auto;   
+    background-color: var(--color1);
+    text-align: center; 
+    border:1px solid var(--color4);
+    border-radius: var(--borderradius1);
+}
+
+.filterInput{
+    width: 200px;
+    padding: var(--spacing2);
+    background-color: var(--color2);
+    margin: var(--spacing2);
+    text-align: left;
+    border:1px solid var(--color4);
+    border-radius: var(--borderradius2);
+}
+
+button{
+    border-radius: var(--borderradius2);
+}
+
+h1{
+    border-top-left-radius: var(--borderradius1);
+    border-top-right-radius: var(--borderradius1);
+    padding-top: var(--spacing2);
+    margin-top: 0px;    
+    background-color: var(--color2);
+    border-bottom:1px solid var(--color4);
+}
+
+.filterDiv{
+    padding: var(--spacing1);
+    margin-left: var(--spacing1);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--borderradius2);
+    border:1px solid var(--color4);
+    margin-left: var(--spacing1);
+    margin-right: var(--spacing1);
+}
+
+.recipeFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipeRight{
+    display: flex;
+}
+
+.recipeLeft{
+    display: flex;
+}
+
+.recipeButton{
+    text-decoration: none;
+    height: 40px;
+    background-color: var(--color3);
+    margin-left: var(--spacing1);
+    border:1px solid var(--color4);
+    font-weight: var(--fontweight1);
+}
+
+.recipes li:nth-child(even){background-color: var(--color2);}
+
+.recipes{
+    
+    margin-left: var(--spacing1);
+    margin-right: var(--spacing1);
+    padding-left: 0px;
+    border:1px solid var(--color4);
+    border-radius: var(--borderradius2);
+}
+
+.recipes li{
+    border-bottom:1px solid var(--color4);
+    list-style: none;
+    padding: var(--spacing1);
+    font-weight: var(--fontweight1);
+}
+
+.recipes img{
+    width: 40px;
+    margin-right: var(--spacing1);
+}
+
+#modalContent{
+ width: 40%;
+ margin:auto;
+ margin-top:50px;
+ background-color: white;
+ text-align: center;
+ border:1px solid var(--color4);
+ border-radius: var(--borderradius1);
+}
+
+#modalImg{
+ width: 300px;
+}
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,var(--opacity)); /* Black w/ opacity */
+}
+
+#ingredients{
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: var(--color2);    
+    border:1px solid var(--color4);
+    border-style: border;
+    border-radius: var(--borderradius2);
+    margin-bottom: 20px;
+ 
+}
+
+#recipeText{
+    margin-left: var(--spacing1);
+    margin-right: var(--spacing1);
+}
+
+#ingredients td, #ingredients th {
+    border: 1px solid var(--color4);
+    padding-left: var(--spacing1);
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+#ingredients th{
+    background-color: var(--color3);
+    border-top: none;
+}
+
+#ingrediens td:first-child, #ingredients th:first-child {
+     border-left: none;
+}
+
+#closeDiv{
+    background-color: var(--color2);
+    border:1px solid var(--color4);
+    padding: var(--spacing1);
+    border-radius: var(--borderradius2);
+}
+
+#close{
+    font-weight: var(--fontweight1);
+    width: 80px;
+    margin: auto;
+    background-color: var(--color3);
+    text-align: center;
+    padding: var(--spacing1);
+    border:1px solid var(--color4);
+    border-radius: var(--borderradius2);
+}
+
+#addRecipeDiv{
+    background-color: lightgreen;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    padding: 20px;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css"></link>
+    </head>
+    <body>
+        <div class = "main">
+            <h1>Meal List</h1>
+            <div class = "filterDiv">
+                <input class = "filterInput" id ="filterName" onkeyup = "filterByName();" placeholder = "Filter by name"></input>
+                <input class = "filterInput" id ="filterRegion" onkeyup = "filterByRegion();" placeholder = "Filter by region"></input>
+                <input class = "filterInput" id ="filterCategory" onkeyup = "filterByCategory();"placeholder = "Filter by category"></input>
+            </div>
+            <ul class = "recipes">
+                <li>
+                    <div class = "recipeFlex">
+                        <div class = "recipeLeft">
+                            <img src = "recipeImg.jpg">
+                            <div class = "d"><label>Croatian Beef Stew</label></div>
+                        </div>
+                        <div class = "recipeRight">
+                            <label>Beef, Croatian</label>
+                            <button class = "recipeButton">See Recipe</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id = "modal">
+            <div id = "modalContent">
+                <h1>Recipe</h1>
+                <img id = "modalImg">
+                <p id = "recipeText"></p>
+                <ul id = "recipeTable">
+                </ul>
+                <table id = "ingredients">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Measure</th>
+                    </tr>
+                </table>
+                <div id = "closeDiv">
+                    <div id = "close">Close</div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "addRecipeDiv">
+            <a href = "addRecipe.html">Add new Recipe</a>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html> 
